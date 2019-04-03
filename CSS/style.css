@@ -1,0 +1,351 @@
+﻿body{
+    font: 15px/1.5 Cambria, Cochin, Georgia;
+    padding:0;
+    margin:0;
+    background-color:#c4c4c4;
+}
+/* Global */
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+   
+}
+
+
+ul{
+    margin:0;
+    padding:0;
+}
+.input, input[type="file"]{
+  margin: auto;
+  width: 100%;
+  max-width: 580px;
+}
+
+.input, input[type="file"], input{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font: 25px 'Open Sans', sans-serif;
+  
+}
+
+
+
+
+/* header **/
+header{
+    background:#363636;
+    color:#ffffff;
+    padding-top:30px;
+    min-height: 70px;
+    border-bottom:#000000 3px solid;
+}
+
+header a{
+color: #ffffff;
+text-decoration:none;
+text-transform: uppercase;
+font-size:16px;
+
+}
+
+header li{
+    float:left;
+    display:inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+}
+header #branding h1{
+    margin:0;
+}
+header nav{
+    float: right;
+    padding-top: 50px;
+    margin-bottom: 15px;
+}
+
+header .highlight, header .current a{
+    color: #b8b3b3;
+    font-weight: bold;
+}
+
+header a:hover{
+    color:#0d344b81;
+    font-weight: bold;
+}
+
+/*showcase */
+#showcase{
+    min-height: 400px;
+    background:url('../img/computer.jpg') no-repeat fixed;
+    background-position: center top;
+    background width: 940px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px
+}
+
+#showcase p{
+    font: size 20px;
+}
+/*spynews*/
+#spynews{
+    padding:15px;
+    color:#ffffff;
+    background:#363636;
+}
+
+#spynews h1{
+    float:left;
+}
+
+#spynews form {
+    float: right;
+    margin-top:15px;
+}
+
+#spynews input[type="email" ]{
+    padding:4px;
+    height:25px;
+    width:250px;
+}
+
+/*Boxes */
+#boxes{
+    margin-top: 20px;
+}
+#boxes .box{
+    float:left;
+    width:30%;
+    text-align: center;
+    padding:10px;
+}
+
+#boxes .box img{
+    width: 100px;
+    height: 100px;
+}
+
+#ciphers h1{
+  font-size: 60px;
+  text-align: center;
+}
+
+#ciphers .containerCiphersCV{
+  width: 80%;
+  margin:auto;
+  overflow: hidden;
+  background: #4c5585;
+  border-bottom: #000000 3px solid;
+  border-top: #000000 3px solid;
+  border-left: #000000 3px solid;
+  border-right: #000000 3px solid;
+}
+  
+/* Caesar Cipher CSS */
+#ciphers .containerCaesar{
+  float: left;
+}
+#ciphers .titleCaesar{
+  padding: 40px 0;
+  color: black;
+  font: bold 20px 'Open Sans', sans-serif;
+  margin: auto;
+  width: 40%;
+  float:center;
+}
+
+
+/* Vigenère Cipher CSS */
+.containerVig{
+  left: 50px;
+  position: absolute;
+}
+
+.titleVig{
+  padding: 40px 0;
+  color: black;
+  text-shadow: 0 0 2px gray;
+  font: bold 36px 'Open Sans', sans-serif;
+  margin: auto;
+  width: 40%;
+  max-width: 580px;
+  float: left;
+}
+/*steganograpghy*/
+
+#main {
+    position:relative;
+    width:100%;
+    height: 100%;
+    padding:20px;
+    background-color: #fff;
+    margin:auto;
+  }
+  #right {
+    position:relative;
+    float:left;
+    margin: 10px;
+    width:600px;
+    vertical-align:top;
+    padding-top: 50px;
+  }
+  #message {
+    position:relative;
+    color: black;
+    font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    font-size: 12px;
+  }
+  #left {
+    position:relative;
+    float:left;
+    width:260px;
+    padding:10px;
+    margin-right:10px;
+    background-color:#FFFF;
+  }
+  .half {
+    position:relative;
+    display:inline-block;
+    width:49%;
+  }
+
+  .half {
+    position:relative;
+    display:inline-block;
+    width:49%;
+  }
+  #original {
+    vertical-align:top;
+  }
+  #messageArea {
+    width:100%;
+  }
+  #img, #cover {
+    width:290px;
+  }
+  .btns {
+    margin-top:15px;
+    margin-bottom:10px;
+    padding: 0 25px;
+    width: 250px;
+    font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    font-size: 12px;
+    align-content: center;
+    text-align: center;
+  }
+  .btn {
+    padding:10px 20px 10px 20px;
+    -moz-border-radius:15px;
+    -o-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    border:2px solid #333;
+    cursor:pointer;
+    color:#333;
+    background-color:white;
+    width:25px;
+    text-align:center;
+  }
+  .btn:hover {
+    color:white;
+    background-color:#333;
+  }
+  #download {
+    position:absolute;
+    top:47px;
+    left:4px;
+    padding:10px 5px 5px 3px;
+    width:10px;
+    border-top:1px solid black;
+    -moz-border-radius:0 0 15px 15px;
+    -o-border-radius:0 0 15px 15px;
+    -webkit-border-radius:0 0 15px 15px;
+    border-radius:0 0 15px 15px;
+    text-decoration:none;
+  }
+  #download:hover {
+    width:70px;
+  }
+  #download:hover:after {
+    content:"ownload";
+  }
+  #description {
+    line-height:25px;
+    padding-bottom:5px;
+    border-bottom:1px solid lightgrey;
+  }
+  #capacity {
+    font-weight:normal;
+    font-size:15px;
+    margin-left:10px;
+    vertical-align:middle;
+  }
+  .note {
+    font-size:9px;
+    text-align:center;
+    color:black;
+  }
+  .invisible {
+    visibility:hidden;
+  }
+  .clear {
+    clear:both;
+  }
+  textarea{
+    width:250px;
+    padding:10px;
+    height:125px;
+    resize:none;
+  }
+
+#password .right{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+
+footer{
+    padding:20px;
+    margin-top:20px;
+    color:#ffffff;  
+    text-align:center;
+    background-color: #363636 
+}
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsleter form
+    #boxes .box{
+        float:none;
+        text-align: center;
+        width:100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+    #newsletter button{
+        display:block;
+        width:100% ;
+    }
+    #newsletter form input[type='email']{
+        widows: 100%;
+        margin-bottom: 5px;
+    }
+
+    }
+}

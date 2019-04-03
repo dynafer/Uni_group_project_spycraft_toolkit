@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ciphers</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+</head>
+
+<body>
+
+<h1>Spycraft Toolkit: Ciphers</h1>
+
+<!-- Caesar Cipher -->
+<div class="containerCaesar">
+  <div class="titleCaesar">Caesar Cipher</div>
+  <div class="input">
+    <form id="form-Caesar">
+      Message:
+      <input type="text" id="plaintextMessage"/>
+      Shift Amount:
+      <input type="number" value="1" id="shift"/>
+      Encrypted Message:
+      <input type="text" id="encryptedMessage"/>
+    </form>
+  </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="js/CaesarCipher.js"></script>
+
+
+<!-- Vigenère Cipher -->
+<div class="containerVig">
+  <div class="titleVig">Vigenère Cipher</div>
+  <div class="input">
+    <form id="form-Vig">
+      Message:
+      <input type="text" id="plaintext"/>
+      Key:
+      <input type="text" id="key" value="abc"/>
+      Encrypted Message:
+      <input type="text" id="encryptedText">
+      <br>
+      <br>
+      <button id="btn-encrypt" type="button">Encrypt</button>
+      <button id="btn-decrypt" type="button">Decrypt</button>
+    </form>
+  </div>
+</div>
+<script src="js/VigCipher.js"></script>
+
+
+<!-- My Cipher -->
+<div class="containerMine">
+  <div class="titleMine">My Cipher</div>
+  <div class="input">
+    <form id="form-Mine">
+      Message:
+      <input type="text" id="plaintextMes">
+      Key:
+      <input type="text" id="cipherKey">
+      Encrypted Message:
+      <textarea id="encryptedOutput" rows="9" cols="78"></textarea>
+      <br>
+      <br>
+      <button id="encrypt-mine" type="button">Encrypt</button>
+      <button id="decrypt-mine" type="button">Decrypt</button>
+    </form>
+  </div>
+</div>
+<script src="js/MyCipher.js"></script>
+
+
+<!-- Message Retrieval -->
+<div class="containerRet">
+  <div class="titleRet">Message Retrieval</div>
+  <div class="input">
+  <input type="number" id="key1">
+  <input type="number" id="key2">
+  <input type="number" id="key3">
+  <textarea id="inputText" placeholder="" rows="9" cols="78"></textarea>
+  <input id="go" class="btn-retrieve" type="submit" value="Retrieve Hidden Message">
+  </div>
+</div>
+<script src="js/MessageRet.js"></script>
+
+
+
+</body>
+
+</html>
