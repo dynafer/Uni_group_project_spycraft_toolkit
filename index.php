@@ -19,9 +19,6 @@ $clientIp = verify_client_ip(get_client_ip());
 if($clientIp === false) {
   $clientIp = "";
 }
-if($clientIp === "::1") {
-  $clientIp = "127.0.0.1";
-}
 if($stmt = $mli->prepare("SELECT username, password, ip FROM accounts WHERE ip=?")) {
   $stmt->bind_param("s", $_SESSION['ZpZnCNKp0kG']);
   $stmt->execute();
@@ -42,7 +39,7 @@ if($num_record <= 0) {
       $logs->close();
       $_SESSION['token2'] = password_hash($clientIp, PASSWORD_DEFAULT, ["cost"=>5]);
     }
-    echo '<div class="error_msg">You tried to change sessions.</div>';   // needs to type a css code for error_msg class
+    echo '<div class="error_msg">You tried to change sessions.</div>';
   }
 ?>
   <link href="CSS/login.css" type="text/css" rel="stylesheet" />
@@ -190,7 +187,7 @@ if($num_record <= 0) {
       $logs->close();
       $_SESSION['token2'] = password_hash($clientIp, PASSWORD_DEFAULT, ["cost"=>5]);
     }
-    echo '<div class="error_msg">Access denied</div>';   // needs to type a css code for error_msg class
+    echo '<div class="error_msg">Access denied</div>';
   }
 } ?>
 </body>

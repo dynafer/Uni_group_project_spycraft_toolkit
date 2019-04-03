@@ -1,4 +1,4 @@
-ï»¿<!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <?php
 require_once(".private/function.php");
 require_once(".private/mysqli.php");
@@ -31,7 +31,7 @@ if($num_record <= 0) {
 			$logs->close();
 			$_SESSION['token2'] = password_hash($clientIp, PASSWORD_DEFAULT, ["cost"=>5]);
 		}
-		echo '<div class="error_msg">You tried to change sessions.</div>';   // needs to type a css code for error_msg class
+		echo '<div class="error_msg">You tried to change sessions.</div>';
 	}
 header("Location: ./index.php");
 } else {
@@ -116,9 +116,9 @@ header("Location: ./index.php");
       <script src="js/CaesarCipher.js"></script>
     </div>
 
-    <!-- VigenÃ¨re Cipher -->
+    <!-- Vigenère Cipher -->
     <div class="containerCiphersCV">
-      <div class="titleCaesar">VigenÃ¨re Cipher
+      <div class="titleCaesar">Vigenère Cipher
         <div class="input">
           <form id="form-Vig">
             Message:
@@ -197,6 +197,6 @@ header("Location: ./index.php");
 			$logs->close();
 			$_SESSION['token2'] = password_hash($clientIp, PASSWORD_DEFAULT, ["cost"=>5]);
 		}
-		echo '<div class="error_msg">Access denied</div>';   // needs to type a css code for error_msg class
+		echo '<div class="error_msg">Access denied</div>';
 	}
 } ?>

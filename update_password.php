@@ -3,7 +3,6 @@ if(isset($_POST) and $_SERVER['REQUEST_METHOD'] == "POST") {
   require_once(".private/function.php");
   require_once(".private/mysqli.php");
   require_once(".private/session.php");
-  //require_once("anti_ddos/start.php");
   $data['success'] = false;
   function sanitize($text) {
     $text = preg_replace("/[\r\n\s\t\'\;\"\=\-\-\#\/*]+/","", htmlspecialchars(stripslashes(trim($text))));
